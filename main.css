@@ -15,7 +15,7 @@ ul{
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    background-image: url(../mostkel/image/body.png);
+    background-image: url(image/body.png);
     background-size: cover;
 }
 .container{
@@ -211,6 +211,11 @@ padding: 15px;
     border-radius: 12px;
     font-size: 30px;
     color: white;
+}
+@media(max-width:768px){
+    .container .content form input.submit{
+    font-size:18px;
+    }
 }
 .container .content  form p:last-child{
     margin-top: 30px;
