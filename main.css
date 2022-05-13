@@ -181,6 +181,12 @@ padding: 15px;
     caret-color: white;
     direction: rtl;
 }
+@media(max-width:768px){
+    .container .content form input:first-child{
+      width: 65%;
+    height: 35px;
+    }
+}
 .container .content  form input:nth-child(2){
     display: block;
     border: navajowhite;
@@ -195,6 +201,12 @@ padding: 15px;
     outline: none;
     caret-color: white;
     direction: rtl;
+}
+@media(max-width:768px){
+    .container .content form input:nth-child(2){
+      width: 65%;
+    height: 35px;
+    }
 }
 .container .content  form h4{
     margin-top: -1%;
