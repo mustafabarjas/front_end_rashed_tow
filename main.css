@@ -1,0 +1,222 @@
+/* Start glopal rules */
+:root{
+    --main-transation:0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../mostkel/image/body.png);
+    background-size: cover;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* end glopal rules */
+body{
+    position: relative;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    background-color: aqua;
+    top: 0;
+    left: 40px;
+}
+body::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    background-color: aqua;
+    top: 0;
+    right:40px;
+}
+@media(max-width:768px){
+    body::after,
+    body::before{
+        display: none;
+    }
+}
+/* START HEADER */
+
+.header .container h2{
+    color: #000000c4;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+}
+@media(max-width:768px){
+    .header .container h2{
+        font-size: 18px;
+    }
+}
+.header .titel{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    position: relative;
+}
+.header .container .titel::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    border-top: 0px solid aqua;
+    border-left: 0px solid aqua;
+    transition: 0.6s;
+}
+.header .container .titel:hover::before{
+    width: 97%;
+    height: 97%;
+    border-width: 6px;
+}
+.header .container .titel::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    border-bottom: 0px solid aqua;
+    border-right: 0px solid aqua;
+    transition:0.6s ;
+    right: 0;
+}
+.header .container .titel:hover::after{
+    width: 97%;
+    height: 97%;
+    border-width: 6px;
+}
+@media(max-width:768px){
+    .header .container .titel:hover::after,
+    .header .container .titel:hover::before{
+        width: 88%;
+    }
+}
+.header .container h2:hover{
+    transform: translateY(-5px);
+    text-shadow: 0 1px 1px;
+}
+.header .container img{
+position: relative;
+margin-left: 30%;
+margin-top: 4%;
+animation: left-and-reight 5s linear infinite;
+}
+@media(max-width:768px){
+    .header .container img{
+        width: 60%;
+        margin-left: 17%;
+    }
+}
+@keyframes left-and-reight {
+    0% , 100% {
+        left: 0;
+    }
+    50%{
+        left: -40px;
+    }  
+    
+}
+/* END HEADER */
+/* START CONTENT */
+.content{
+text-align: center;
+padding-top: 60px;
+}
+
+.container .content  h2{
+    font-size: 45px;
+    color: #1a6e6e;
+}
+@media(max-width:768px){
+    .container .content  h2{
+        font-size: 34px;
+    }
+}
+.container .content  form{
+padding: 15px;
+}
+.container .content  form input:first-child{
+    display: block;
+    border: navajowhite;
+    background-color: #979393;
+    margin-left: 11%;
+    width: 75%;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    outline: none;
+    caret-color: white;
+    direction: rtl;
+}
+.container .content  form input:nth-child(2){
+    display: block;
+    border: navajowhite;
+    background-color: #979393;
+    margin-left: 11%;
+    width: 75%;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    outline: none;
+    caret-color: white;
+    direction: rtl;
+}
+.container .content  form h4{
+    margin-top: -1%;
+    margin-left: -55%;
+    color: #388989;
+    font-weight: bold;
+}
+.container .content form input.submit{
+    margin-top: 90px;
+    border: none;
+    background-color: #5732e1;
+    width: 65%;
+    height: 65px;
+    border-radius: 12px;
+    font-size: 30px;
+    color: white;
+}
+.container .content  form p:last-child{
+    margin-top: 30px;
+    color: #037299;
+}
+.container .content  form span{
+    color: blue;
+}
+/* END CONTENT */
