@@ -169,7 +169,7 @@ padding: 15px;
 .container .content  form input:first-child{
     display: block;
     border: navajowhite;
-    background-color: #979393;
+    background-color: #9793939c;
     margin-left: 11%;
     width: 75%;
     height: 50px;
@@ -190,7 +190,7 @@ padding: 15px;
 .container .content  form input:nth-child(2){
     display: block;
     border: navajowhite;
-    background-color: #979393;
+    background-color: #9793939c;
     margin-left: 11%;
     width: 75%;
     height: 50px;
@@ -217,7 +217,7 @@ padding: 15px;
 .container .content form input.submit{
     margin-top: 90px;
     border: none;
-    background-color: #5732e1;
+    background-color: #5732e1de;
     width: 65%;
     height: 65px;
     border-radius: 12px;
